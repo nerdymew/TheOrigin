@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(https://cdn.wallpapersafari.com/79/16/Wneqbh.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 150px;
+}
+
+.nav_buttons {
+  flex: 1;
+  text-align: right;
+}
+
+.nav_buttons ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 16px;
+  position: relative;
+}
+
+.nav_buttons ul li a {
+  color: #eeeeee;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav_buttons ul li::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #00adb5;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav_buttons ul li:hover::after {
+  width: 100%;
+}
+
+.text {
+  width: 90%;
+  color: #eeeeee;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text h1 {
+  font-size: 60px;
+  font-family: "lora";
+  color: #eeeeee;
+  margin-bottom: 20px;
+}
+
+.text p {
+  font-size: 18px;
+  color: #eeeeee;
+  text-align: center;
+  margin: auto auto 30px auto;
+  word-spacing: 2px;
+}
+
+.origin_btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #eeeeee;
+  border: 1px solid #eeeeee;
+  padding: 12px 34px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.origin_btn:hover {
+  background-color: #00adb5;
+  border: 1px solid #00adb5;
+  transition: 1s;
+}
+
+.about {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.about h1 {
+  font-family: "lora";
+  font-size: 45px;
+  color: #00adb5;
+  padding-bottom: 50px;
+}
+
+.about p {
+  font-size: 18px;
+  color: #393e46;
+  word-spacing: 2px;
+}
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 31%;
+  background: #eeeeee;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.col:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.heroes {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(img/heroes_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.heroes h1 {
+  font-family: "lora";
+  font-size: 45px;
+  color: #eeeeee;
+}
+
+.rowh {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.colh {
+  flex-basis: 31%;
+  background: transparent;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+}
+
+.join {
+  min-height: 100vh;
+  margin: auto;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.join h1 {
+  font-family: "lora";
+  font-size: 36px;
+  color: #00adb5;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.join p {
+  font-size: 18px;
+  color: #393e46;
+  word-spacing: 2px;
+  padding-bottom: 60px;
+}
+
+.footer_img {
+  width: 40%;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+.header_img {
+  width: 42%;
+  position: absolute;
+  right: 1100px;
+  z-index: -1;
+}
+
+.origin_btn2 {
+  display: inline-block;
+  text-decoration: none;
+  color: #393e46;
+  border-radius: 7px;
+  border: 1px solid #393e46;
+  padding: 12px 34px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "lora";
+}
+
+.origin_btn2:hover {
+  background-color: #00adb5;
+  border: 1px solid #00adb5;
+  transition: 1s;
+}
+
+.footer {
+  background-color: #393e46;
+  color: #eeeeee;
+  margin: 345px 0 0 0;
+  padding: 50px;
+}
